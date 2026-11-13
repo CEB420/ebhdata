@@ -1,0 +1,201 @@
+{
+  "as_of": "2026-10-23",
+  "model": {
+    "scale": 0.88,
+    "drift_k": -0.09
+  },
+  "teams": [
+    {
+      "id": "oe:team:50f58982d91a36557ec8aec52ab014f",
+      "name": "Gen.G",
+      "league": "LCK",
+      "rank": 1,
+      "rating": 2339.2,
+      "rd": 70.6
+    },
+    {
+      "id": "oe:team:3a1d18f46bcb3716ebcfcf4ef068934",
+      "name": "Hanwha Life Esports",
+      "league": "LCK",
+      "rank": 2,
+      "rating": 2287.4,
+      "rd": 66.8
+    },
+    {
+      "id": "oe:team:ce499dea30cfce118f4fe85da0227e8",
+      "name": "T1",
+      "league": "LCK",
+      "rank": 3,
+      "rating": 2235.0,
+      "rd": 67.6
+    },
+    {
+      "id": "oe:team:d356a144644879dabb5f34cd99c886d",
+      "name": "Bilibili Gaming",
+      "league": "LPL",
+      "rank": 1,
+      "rating": 2132.1,
+      "rd": 70.7
+    },
+    {
+      "id": "oe:team:ed28f87f0cfdba0a2a8f183cebae73a",
+      "name": "Anyone's Legend",
+      "league": "LPL",
+      "rank": 2,
+      "rating": 2047.9,
+      "rd": 67.9
+    },
+    {
+      "id": "oe:team:48d7941ccbd5b89aca46c57b0c2f8fb",
+      "name": "Ninjas in Pyjamas",
+      "league": "LPL",
+      "rank": 3,
+      "rating": 2046.0,
+      "rd": 78.5
+    },
+    {
+      "id": "oe:team:7d6673d3a9d00363c6bebc1a630da6e",
+      "name": "G2 Esports",
+      "league": "LEC",
+      "rank": 1,
+      "rating": 2153.3,
+      "rd": 73.0
+    },
+    {
+      "id": "oe:team:f3aa9bbd924ce3af42ac53f8326bc7c",
+      "name": "Karmine Corp",
+      "league": "LEC",
+      "rank": 2,
+      "rating": 2106.1,
+      "rd": 64.3
+    },
+    {
+      "id": "oe:team:4acc40654379b4da680be1bd3129dfa",
+      "name": "Movistar KOI",
+      "league": "LEC",
+      "rank": 3,
+      "rating": 2021.4,
+      "rd": 69.8
+    },
+    {
+      "id": "oe:team:8eb884e168f28402ce685bedebb5250",
+      "name": "Team Liquid",
+      "league": "LCS",
+      "rank": 1,
+      "rating": 1992.7,
+      "rd": 71.6
+    },
+    {
+      "id": "oe:team:da1143bf9a245b78a8dc86417de85b3",
+      "name": "LYON",
+      "league": "LCS",
+      "rank": 2,
+      "rating": 1967.2,
+      "rd": 68.7
+    },
+    {
+      "id": "oe:team:d522e8753c50018adbb82305997c211",
+      "name": "Cupid Esports",
+      "league": "LCS",
+      "rank": 3,
+      "rating": 1945.6,
+      "rd": 69.3
+    }
+  ],
+  "champion_stats": {
+    "league": "LCK",
+    "patch": "16.16",
+    "games": 80,
+    "champions": [
+      {
+        "champion": "Cassiopeia",
+        "pick_rate": 0.062,
+        "ban_rate": 0.85,
+        "presence": 0.912,
+        "win_rate": 1.0
+      },
+      {
+        "champion": "Vi",
+        "pick_rate": 0.138,
+        "ban_rate": 0.6,
+        "presence": 0.738,
+        "win_rate": 0.636
+      },
+      {
+        "champion": "Nocturne",
+        "pick_rate": 0.15,
+        "ban_rate": 0.562,
+        "presence": 0.713,
+        "win_rate": 0.583
+      },
+      {
+        "champion": "Orianna",
+        "pick_rate": 0.2,
+        "ban_rate": 0.487,
+        "presence": 0.688,
+        "win_rate": 0.5
+      },
+      {
+        "champion": "Bard",
+        "pick_rate": 0.175,
+        "ban_rate": 0.4,
+        "presence": 0.575,
+        "win_rate": 0.286
+      },
+      {
+        "champion": "Lucian",
+        "pick_rate": 0.188,
+        "ban_rate": 0.325,
+        "presence": 0.512,
+        "win_rate": 0.4
+      },
+      {
+        "champion": "Syndra",
+        "pick_rate": 0.212,
+        "ban_rate": 0.263,
+        "presence": 0.475,
+        "win_rate": 0.471
+      },
+      {
+        "champion": "Pantheon",
+        "pick_rate": 0.212,
+        "ban_rate": 0.25,
+        "presence": 0.463,
+        "win_rate": 0.471
+      }
+    ]
+  },
+  "team_profiles": [
+    {
+      "team": "Gen.G",
+      "league": "LCK",
+      "period": "2026",
+      "games": 100,
+      "win_rate": 0.75,
+      "avg_game_minutes": 32.4,
+      "gold_diff_15": 820,
+      "xp_diff_15": 603,
+      "first_dragon_rate": 0.57,
+      "first_tower_rate": 0.62,
+      "first_blood_rate": 0.5,
+      "estimated": []
+    },
+    {
+      "team": "Bilibili Gaming",
+      "league": "LPL",
+      "period": "2026",
+      "games": 140,
+      "win_rate": 0.707,
+      "avg_game_minutes": 32.7,
+      "gold_diff_15": 1102,
+      "xp_diff_15": 851,
+      "first_dragon_rate": 0.493,
+      "first_tower_rate": 0.652,
+      "first_blood_rate": 0.464,
+      "estimated": [
+        "gold_diff_15",
+        "xp_diff_15"
+      ]
+    }
+  ]
+}
