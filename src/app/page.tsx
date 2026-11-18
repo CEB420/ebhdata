@@ -13,7 +13,7 @@ import { snippet } from "@/lib/snippets";
 const topRated = [...TEAMS].sort((x, y) => y.rating - x.rating).slice(0, 5);
 const showcase = predict(teamBySlug("gen-g"), teamBySlug("t1"), 5);
 const topChampion = CHAMPION_STATS.champions[0];
-const lplProfile = TEAM_PROFILES.find((p) => p.estimated.length > 0)!;
+const showcaseProfile = TEAM_PROFILES.find((p) => p.estimated.length === 0)!;
 
 function SectionHeader({ title, sub }: { title: string; sub: string }) {
   return (
@@ -102,27 +102,24 @@ function ChampionShot() {
 
 function ProfileShot() {
   const rows = [
-    { label: "Gold diff @15", value: `+${lplProfile.gold_diff_15}`, est: lplProfile.estimated.includes("gold_diff_15") },
-    { label: "XP diff @15", value: `+${lplProfile.xp_diff_15}`, est: lplProfile.estimated.includes("xp_diff_15") },
-    { label: "First dragon", value: `${Math.round(lplProfile.first_dragon_rate! * 100)}%`, est: false },
-    { label: "First tower", value: `${Math.round(lplProfile.first_tower_rate! * 100)}%`, est: false },
+    { label: "Gold diff @15", value: `+${showcaseProfile.gold_diff_15}` },
+    { label: "XP diff @15", value: `+${showcaseProfile.xp_diff_15}` },
+    { label: "First dragon", value: `${Math.round(showcaseProfile.first_dragon_rate! * 100)}%` },
+    { label: "First tower", value: `${Math.round(showcaseProfile.first_tower_rate! * 100)}%` },
   ];
   return (
     <div className="rounded-2xl bg-dark p-4 ring-1 ring-white/8">
       <div className="mb-4 flex items-center justify-between">
-        <span className="t-sm font-semibold text-white">{lplProfile.team_name}</span>
+        <span className="t-sm font-semibold text-white">{showcaseProfile.team_name}</span>
         <span className="t-xs text-gray-3">
-          {lplProfile.league} · {lplProfile.period}
+          {showcaseProfile.league} · {showcaseProfile.period}
         </span>
       </div>
       <ul className="flex flex-col divide-y divide-white/8">
         {rows.map((r) => (
           <li key={r.label} className="t-sm flex items-center justify-between py-2.5">
             <span className="text-gray-3">{r.label}</span>
-            <span className="flex items-center gap-2 text-white tabular-nums">
-              {r.est && <span className="t-xs rounded-full bg-[#f5b53d]/15 px-2 py-0.5 text-[#f5c46b]">estimated</span>}
-              {r.value}
-            </span>
+            <span className="text-white tabular-nums">{r.value}</span>
           </li>
         ))}
       </ul>
@@ -252,7 +249,7 @@ export default function Home() {
             </div>
             <div className="grid gap-5 md:grid-cols-2">
               {[
-                { title: "Team Profiles", text: "Early-game and objective tendencies, with estimates clearly flagged.", shot: <ProfileShot /> },
+                { title: "Team Profiles", text: "Early-game and objective tendencies for every team, from gold diff to first tower.", shot: <ProfileShot /> },
                 { title: "One key, every endpoint", text: "A single API key unlocks every product you subscribe to.", shot: <EndpointsShot /> },
               ].map((c, i) => (
                 <Reveal key={c.title} delay={i * 80}>
