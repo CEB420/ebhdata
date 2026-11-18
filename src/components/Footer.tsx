@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
+import { Nav } from "./Nav";
 
 const COLUMNS = [
   {
@@ -88,7 +89,11 @@ export function Footer() {
 export function SiteShell({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <div className="relative z-10 overflow-clip rounded-b-[32px] bg-white">{children}</div>
+      <div className="relative z-10 rounded-b-[32px] bg-white [clip-path:inset(0_round_0_0_32px_32px)]">
+        <Nav />
+        {/* Content slides up under the transparent nav so the gradient runs to the top. */}
+        <div className="-mt-[66px]">{children}</div>
+      </div>
       <Footer />
     </>
   );

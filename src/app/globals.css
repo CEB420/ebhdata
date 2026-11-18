@@ -112,6 +112,8 @@ body {
   }
 
   .wash { background: var(--wash); }
+  /* Hero: the wash fades back to white so it reads as light, not a band. */
+  .wash-hero { background: linear-gradient(180deg, #ffffff 0%, #dce3ff 48%, #cdd3ff 76%, #ffffff 100%); }
   .wash-short { background: var(--wash-short); }
 
   /* White card with a faint ring and a 4px white inner frame. */

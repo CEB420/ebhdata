@@ -14,6 +14,8 @@ export type Session = {
     cardLast4: string;
   };
   apiKey?: { value: string; createdAt: string; revealed: boolean };
+  /** Requests per day (YYYY-MM-DD), from test requests sent in the dashboard. */
+  usage?: Record<string, number>;
 };
 
 const STORAGE = "ebh-prototype-session";
@@ -45,7 +47,7 @@ export function newApiKey() {
 }
 
 export function maskKey(key: string) {
-  return `ebh_live_••••••••••••${key.slice(-4)}`;
+  return `ebh_live_••••••${key.slice(-4)}`;
 }
 
 export function trialEndDate(from = new Date()) {
